@@ -1,6 +1,6 @@
 async function solicitarDatos(){
     try{
-        const solicitudFetch = await fetch("https://api.nasa.gov/planetary/apod?apia_key=DEMO_KEY&count=15")
+        const solicitudFetch = await fetch("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&count=15")
         if(!solicitudFetch.ok){
             throw new Error("Error en el fetch: "+solicitudFetch.status)
         }
